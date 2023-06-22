@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="to-do-list.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Task List OF 2023</h1>
+      <form id="New-task-from">
+        <input
+          type="text"
+          id="New-task-input"
+          placeholder="New Planned for Today"
+        />
+        <section class="modal hidden">
+          <div class="flex">
+            <button class="btn-close">⨉</button>
+            <div class="column-container">
+              <input type="text" id="title-input" placeholder="Title" />
+              <input type="date" id="Cleander" name="Cleander" />
+              <textarea
+                id="description-input"
+                placeholder="Description"
+              ></textarea>
+            </div>
+          </div>
+          <button class="btn" type="submit" id="submit-btn">Submit</button>
+        </section>
+        <div class="overlay hidden"></div>
+        <button class="btn btn-open">ADD to Open</button>
+      </form>
+    </header>
+
+    <div id="tasks">
+      <!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+    </div>
+
+    <script src="To-do-list.js"></script>
+  </body>
+</html>
